@@ -47,6 +47,8 @@ void AElevator::Tick(float DeltaTime)
 
 void AElevator::OnInteract(ACharacter* Interactor)
 {
+	if (!bIsPoweredOn) return;
+	
 	Super::OnInteract(Interactor);
 
 	PlayerController = Cast<APlayerController>(Interactor->GetController());

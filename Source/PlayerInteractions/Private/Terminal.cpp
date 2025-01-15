@@ -28,6 +28,8 @@ void ATerminal::OnInteract(ACharacter* Interactor)
 {
 	Super::OnInteract(Interactor);
 
+	if (!bIsActive) return;
+
 	if (LinkedInteractable)
 	{
 		LinkedInteractable->Activate();
