@@ -16,7 +16,7 @@ AKeyCard::AKeyCard()
 void AKeyCard::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	Tags.Add(FName("KeyCard"));
 }
 
 void AKeyCard::OnInteract(ACharacter* Interactor)
@@ -36,4 +36,3 @@ void AKeyCard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
-

@@ -39,4 +39,3 @@ void APickupItem::OnInteract(ACharacter* Interactor)
 void APickupItem::Activate()
 {
 }
-

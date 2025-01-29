@@ -54,6 +54,16 @@ bool UInventoryManager::HasItem(const FString& ItemName) const
 	return false;
 }
 
+bool UInventoryManager::ItemHasTag(const FName& TagName) const
+{
+	for (const APickupItem* Item : Items)
+	{
+		if (Item && Item->ActorHasTag(TagName)) return true;
+	}
+
+	return false;
+}
+
 void UInventoryManager::Cleanup()
 {
 	Instance->ConditionalBeginDestroy();

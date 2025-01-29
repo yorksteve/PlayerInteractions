@@ -24,6 +24,7 @@ public:
 	
 	bool HasItem(const APickupItem* Item) const;
 	bool HasItem(const FString& ItemName) const;
+	bool ItemHasTag(const FName& TagName) const;
 
 	static void Cleanup();
 

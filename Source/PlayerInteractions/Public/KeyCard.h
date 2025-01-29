@@ -23,5 +23,4 @@ protected:
 	virtual void BeginPlay() override;
 
 	virtual void OnInteract(ACharacter* Interactor) override;
-
 };

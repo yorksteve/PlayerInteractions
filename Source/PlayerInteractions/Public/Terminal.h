@@ -27,5 +27,6 @@ private:
 	UPROPERTY(EditAnywhere)
 	AInteractableBase* LinkedInteractable;
 
+	UPROPERTY(EditAnywhere)
 	bool bIsActive = false;
 };
